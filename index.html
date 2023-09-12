@@ -292,18 +292,30 @@
             </li>
             <li class="card__list">
               <picture>
-                <source media="(min-width:1200px)" srcset="
-                                  ./images/team4-desktop.jpg    1x,
-                                  ./images/team4-desktop@2x.jpg 2x
-                                " />
-                <source media="(min-width:768px)" srcset="
-                                  ./images/team4-tablet.jpg    1x,
-                                  ./images/team4-tablet@2x.jpg 2x
-                                " />
-                <img srcset="
-                                  ./images/team4-mobile.jpg    1x,
-                                  ./images/team4-mobile@2x.jpg 2x
-                                " src="./images/team/mobile/image.jpg" width="450" alt="pablo" loading="lazy" />
+                <source
+                  media="(min-width:1200px)"
+                  srcset="
+                    ./images/team4-desktop.jpg    1x,
+                    ./images/team4-desktop@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width:768px)"
+                  srcset="
+                    ./images/team4-tablet.jpg    1x,
+                    ./images/team4-tablet@2x.jpg 2x
+                  "
+                />
+                <img
+                  srcset="
+                    ./images/team4-mobile.jpg    1x,
+                    ./images/team4-mobile@2x.jpg 2x
+                  "
+                  src="./images/team/mobile/image.jpg"
+                  width="450"
+                  alt="pablo"
+                  loading="lazy"
+                />
               </picture>
               <div class="card__name">
                 <div class="card__profession">
@@ -340,125 +352,101 @@
       <section class="section clients">
         <div class="container">
           <h2 class="text">Clientes Regulares</h2>
-          <div class="clients__clients">
-            <div class="clients__clientes">
-              <div class="clients__container">
-                <svg class="clients__logo">
-                  <use href="./images/icons.svg#company-1"></use>
-                </svg>
-              </div>
-            </div>
-            <div class="clients__clientes">
-              <div class="clients__container">
-                <svg class="clients__logo">
-                  <use href="./images/icons.svg#company-2"></use>
-                </svg>
-              </div>
-            </div>
-            <div class="clients__clientes">
-              <div class="clients__container">
-                <svg class="clients__logo">
-                  <use href="./images/icons.svg#company-3"></use>
-                </svg>
-              </div>
-            </div>
-            <div class="clients__clientes">
-              <div class="clients__container">
-                <svg class="clients__logo">
-                  <use href="./images/icons.svg#company-4"></use>
-                </svg>
-              </div>
-            </div>
-            <div class="clients__clientes">
-              <div class="clients__container">
-                <svg class="clients__logo">
-                  <use href="./images/icons.svg#company-5"></use>
-                </svg>
-              </div>
-            </div>
-            <div class="clients__clientes">
-              <div class="clients__container">
-                <svg class="clients__logo">
-                  <use href="./images/icons.svg#company-6"></use>
-                </svg>
-              </div>
-            </div>
-          </div>
+          <ul class="clients__clientes">
+            <li class="clients__container">
+              <svg class="clients__logo">
+                <use href="./images/icons.svg#company-1"></use>
+              </svg>
+            </li>
+            <li class="clients__container">
+              <svg class="clients__logo">
+                <use href="./images/icons.svg#company-2"></use>
+              </svg>
+            </li>
+            <li class="clients__container">
+              <svg class="clients__logo">
+                <use href="./images/icons.svg#company-3"></use>
+              </svg>
+            </li>
+            <li class="clients__container">
+              <svg class="clients__logo">
+                <use href="./images/icons.svg#company-4"></use>
+              </svg>
+            </li>
+            <li class="clients__container">
+              <svg class="clients__logo">
+                <use href="./images/icons.svg#company-5"></use>
+              </svg>
+            </li>
+            <li class="clients__container">
+              <svg class="clients__logo">
+                <use href="./images/icons.svg#company-6"></use>
+              </svg>
+            </li>
+          </ul>
         </div>
       </section>
   </main>
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__footer">
-        <div class="seccion-one">
-          <a href="https://www.google.com/urlsa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjZ1KeeqvL9AhXumWoFHTuwAtIQFnoECBIQAQ&url=https%3A%2F%2Fwebstudy.pt%2F&usg=AOvVaw30ssXH3MeAgQATn-cXA_QP"
-            class="footer__webstudio">WebStudio</a>
-          <address class="footer__address">
-            <a class="footer__direction">
-              <span class="salto">Calz. Ticomán 500, Ciudad de</span>
-              <span class="salto">México, CDMX, México</span>
-            </a>
-            <ul class="footer__contacts-list">
-              <li class="footer__contacts-footer">
-                <a class="footer__one-footer" href="mailto:info@devstudio.com">info@devstudio.com</a>
-              </li>
-              <li class="footer__contacts-footer">
-                <a class="footer__one-footer" href="tel+525555296000">
-                  +52 55 5529 6000</a>
-              </li>
-            </ul>
-          </address>
-        </div>
-        <div class="seccion-one networks">
-          <h4 class="find">Encuentrenos en</h4>
-          <div class="networks__flex">
-            <div class="networks__link-container">
-              <svg class="networks__link-icon">
-                <use href="./images/icons.svg#instagram"></use>
-              </svg>
-            </div>
-            <div class="networks__link-container">
-              <svg class="networks__link-icon">
-                <use href="./images/icons.svg#twitter"></use>
-              </svg>
-            </div>
-            <div class="networks__link-container">
-              <svg class="networks__link-icon">
-                <use href="./images/icons.svg#facebook"></use>
-              </svg>
-            </div>
-            <div class="networks__link-container">
-              <svg class="networks__link-icon">
-                <use href="./images/icons.svg#linkedin"></use>
-              </svg>
-            </div>
+      <footer class="footer">
+        <div class="container footer__container">
+          <div class="footer__info">
+            <a href="https://www.google.com/urlsa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjZ1KeeqvL9AhXumWoFHTuwAtIQFnoECBIQAQ&url=https%3A%2F%2Fwebstudy.pt%2F&usg=AOvVaw30ssXH3MeAgQATn-cXA_QP"
+              class="footer__webstudio">WebStudio</a>
+            <address class="footer__adress">
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a href="https://www.google.com.mx/maps/place/Calz.+Ticom%C3%A1n+500,+La+Laguna+Ticoman,+Gustavo+A.+Madero,+07340+Ciudad+de+M%C3%A9xico,+CDMX,+M%C3%A9xico/@19.5102022,-99.1350661,17z/data=!3m1!4b1!4m5!3m4!1s0x85d1f9c66374d1dd:0x72c74207e8767392!8m2!3d19.5102022!4d-99.1324912?entry=ttu"
+                    target="_blank" rel="noopener noreferrer" class="link footer__link"><span class="footer__span">Ticomán
+                      500, Ciudad de México, CDMX, México</span></a>
+                </li>
+                <li class="footer__item">
+                  <a class="link footer__link" href="mailto:info@example.com">info@example.com</a>
+                </li>
+                <li class="footer__item">
+                  <a class="link footer__link" href="tel:+525555296000 ">+52 55 5529 6000
+                  </a>
+                </li>
+              </ul>
+            </address>
           </div>
-        </div>
-        <div class="seccion-one">
-          <div class="boletin">
-            <h4 class="find">SUSCRÍBASE AL BOLETÍN INFORMATIVO</h4>
-            <form>
-              <label for="email-footer"></label>
-              <div class="boletin__input">
-                <input class="boletin__inputs sin-borde" type="email" id="email" name="email-footer" placeholder="Correo electrónico">
+          <div class="seccion-one networks">
+            <h4 class="find">Encuentrenos en</h4>
+            <div class="networks__flex">
+              <div class="networks__link-container">
+                <svg class="networks__link-icon">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
               </div>
-            </form>
+              <div class="networks__link-container">
+                <svg class="networks__link-icon">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </div>
+              <div class="networks__link-container">
+                <svg class="networks__link-icon">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </div>
+              <div class="networks__link-container">
+                <svg class="networks__link-icon">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="seccion-one">
-          <div class="boletin__container-button">
-            <button class="boletin__buttons sin-borde" type="checkbox">Suscríbase</button>
-            <div class="boletin__container-svg">
-              <svg class="boletin__iconos">
+          <form class="footer__form">
+            <label class="footer__label" for="suscribe">suscríbase al boletin informativo</label>
+            <!-- <div class="footer__input-container"> -->
+            <input class="footer__input" type="email" name="email" id="suscribe" placeholder="Correo electrónico" required />
+            <button type="submit" class="button button--footer">
+              Suscribase<svg class="button__icon" width="16" height="12">
                 <use href="./images/icons.svg#avion"></use>
               </svg>
-            </div>
-          </div>
+            </button>
+            <!-- </div> -->
+          </form>
         </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+      </footer>
   <!-- Backdrop y Ventana Modal -->
 <div class="container">
   <div class="modal-backdrop is-hidden" data-modal>

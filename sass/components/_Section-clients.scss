@@ -1,21 +1,27 @@
-.clients {
+    .clients {
     padding: 50px;
-    &__clients {
+    &__clientes {
         display: flex;
-        justify-content: center;
-        gap: 30px;
-        padding-top: 44px;
+        flex-wrap: wrap;
+        gap: 20px
     }
     &__container {
-        width: 170px;
-        height: 81px;
-        border-radius: 4px;
-        border: 1px solid #AFB1B8;
         display: flex;
-        justify-content: space-around;
-        align-items: center;
+        justify-content: center;
+        padding: 14.09px 0;
+        border-radius: 4px;
+        flex: 1 1 calc((100% - 30px) / 2);
+        border: 1px solid $description-color;
         &:hover {
-            border-color: #2196F3;
+            border-color: $principal-color;
+        }
+    
+        @media screen and (min-width: 768px) {
+            flex: 1 1 calc((100% - 60px) / 3);
+        }
+    
+        @media screen and (min-width: 1200px) {
+            flex: 1 1 calc((100% - 150px) / 6);
         }
     }
     &__logo {
