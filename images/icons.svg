@@ -101,4 +101,7 @@
   <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="avion">
     <path d="M24 0 0 13.5l7.66994 2.8407L19.5 5.25002 10.5017 17.3896l.0073.0027-.009-.0027v6.6105l4.3013-5.0181 5.4488 2.0181L24 0Z"></path>
   </symbol>
+  <symbol id="menu-mobile" viewBox="0 0 32 32">
+<path d="M6.4 11.734v-2.134h19.2v2.134h-19.2zM6.4 17.066h19.2v-2.133h-19.2v2.133zM6.4 22.4h19.2v-2.134h-19.2v2.134z"></path>
+</symbol>
 </svg>

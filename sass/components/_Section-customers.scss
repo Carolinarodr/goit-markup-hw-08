@@ -1,0 +1,41 @@
+.customers {
+    margin-bottom: 94px;
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px
+    }
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        padding: 14.09px 0;
+        border-radius: 4px;
+        flex: 1 1 calc((100% - 30px) / 2);
+        border: 1px solid $description-color;
+
+        @include tablet {
+            flex: 1 1 calc((100% - 60px) / 3);
+        }
+
+        @include desktop {
+            flex: 1 1 calc((100% - 150px) / 6);
+        }
+    }
+
+    &__icon {
+        width: 106px;
+        height: 53px;
+        fill: $description-color;
+    }
+
+    &__item:hover {
+        border-color: $principal-color;
+    }
+
+    &__item:hover {
+        .customers__icon {
+            fill: $principal-color;
+        }
+    }
+}

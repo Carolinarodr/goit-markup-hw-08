@@ -19,11 +19,53 @@
 </head>
 
 <body>
+  <div class="mobile-menu">
+    <svg class="icon mobile-menu__icon" width="16" height="12">
+      <use href="./images/icons.svg#close"></use>
+    </svg>
+    <ul class="mobile-menu__list">
+      <li class="mobile-menu__item">
+        <a class="link mobile-menu__link mobile-active" href="./index.html" target="_self"
+          rel="noopener noreferrer">Estudio</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="link mobile-menu__link" href="portafolio.html" target="_self" rel="noopener noreferrer">Portafolio</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a class="link mobile-menu__link" href="#" target="_self" rel="noopener noreferrer">Contactos</a>
+      </li>
+    </ul>
+    <div class="mobile-menu__contact-container">
+      <a class="link mobile-menu__contact" href="tel:+525555296000" target="_blank" rel="noopener noreferrer">+52 55 5529
+        6000</a>
+      <a class="link mobile-menu__contact" href="mailto:info@devstudio.com" target="_blank" rel="noopener noreferrer">
+        info@devstudio.com</a>
+    </div>
+    <ul class="mobile-menu__social">
+      <li class="mobile-menu__item-social">
+        <a href="#" class="link mobile-menu__social-link">Instagram</a>
+      </li>
+      <li class="mobile-menu__item-social">
+        <a href="#" class="link mobile-menu__social-link">Twitter</a>
+      </li>
+      <li class="mobile-menu__item-social">
+        <a href="#" class="link mobile-menu__social-link">Facebook</a>
+      </li>
+      <li class="mobile-menu__item-social">
+        <a href="#" class="link mobile-menu__social-link">Linkedin</a>
+      </li>
+    </ul>
+  </div>
   <header class="header">
     <div class="container">
       <div class="header__container">
         <nav class="header__container">
           <a class="header__title" href="#">WebStudio</a>
+          <button type="button" class="header__open-button">
+            <svg class="icon" width="16" height="12">
+              <use href="./images/icons.svg#menu-mobile"></use>
+            </svg>
+          </button>
           <ul class="header__list">
             <li class="header__item">
               <a href="./index.html" rel="noopener noreferrer" class="header__links active">Estudio</a>
@@ -59,22 +101,15 @@
       </div>
     </div>
   </header>
-
   <main>
-    <section class="section title">
-      <div class="container">
-        <div class="title__primary">
-          <h1 class="title__title">
-            SOLUCIONES EFICACES PARA
-            <span class="salto"></span>SU NEGOCIO
-          </h1>
-          <div class="title__button">
-            <button class="title__boton" type="button" data-modal-open>Solicite nuestro servicio</button>
-          </div>
-        </div>
-      </div>
-        
-    </section>
+<section class="section title">
+  <div class="container title__container">
+    <h1 class="title__text">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
+    <button type="button" class="button button--title" data-modal-open>
+      Solicite nuestro servicio
+    </button>
+  </div>
+</section>
       <!--hero section-->
       <section class="section benefits">
         <div class="container">
@@ -139,7 +174,7 @@
       </section>
       <section class="section services">
         <div class="container services__container">
-          <h2 class="subtitle services__text">A qué nos dedicamos</h2>
+          <h2 class="text">A qué nos dedicamos</h2>
           <ul class="services__list">
             <li class="services__item services__item--desktop">
               <h3 class="services__title">APLICACIONES DE ESCRITORIO</h3>
@@ -496,6 +531,10 @@
     </div>
   </div>
 </div>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+  crossorigin="anonymous"></script>
 <script src="./js/modal.js"></script>
+<script src="./js/mobile-menu.js"></script>
 </body>
 </html>
