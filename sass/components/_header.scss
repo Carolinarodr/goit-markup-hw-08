@@ -9,8 +9,13 @@
     
     &__container {
         display: flex;
-        gap: 53px;
-        height: 61px;
+        align-items: center;
+        border-bottom: 1px solid #ECECEC;
+    }
+    &__nav {
+        display: flex;
+        flex: 2 2 auto;
+        align-items: center;
     }
     &__title {
         color: $principal-color;
@@ -23,10 +28,14 @@
         text-decoration: none;
     }
     &__list {
-        display: flex;
-        list-style-type: none;
+        display: none;
         align-items: center;
-        gap: 50px;
+        margin: 0 0 0 70px;
+        position: relative;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+        }
     }
     &__links {
         color: $font-color;
@@ -37,16 +46,23 @@
         font-weight: 500;
         text-decoration: none;
         position: relative;
+        padding: 5px 0;
+        margin: 0 25px;
         &hover {
             color: #0059ff;
         }
     }
     &__contacts {
-        display: flex;
-        list-style-type: none;
-        align-items: center;
-        gap: 50px;
-        margin-left: 210px;
+    display: none;
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        @media screen and (min-width: 1200px) {
+            flex-direction: row;
+            gap: 30px;
+        }
     }
     &__one {
         color: $description-color;
@@ -103,13 +119,21 @@
 
     &:hover {
         cursor: pointer;
-
-        .icon {
-            fill: $principal-color;
-        }
-    }
-    .icon {
-        width: 40px;
-        height: 40px;
     }
 }
+
+ .iconos:hover {
+     fill: $principal-color;
+ }
+ 
+ .iconos {
+     width: 40px;
+     height: 40px;
+     fill: #000000;
+     &:hover {
+        fill: #0059ff;
+     }
+ }
+ .iconos {
+     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }

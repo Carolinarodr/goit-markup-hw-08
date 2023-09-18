@@ -107,3 +107,8 @@
 .mobile-active {
     color: $principal-color;
 }
+
+.is-open {
+    visibility: visible;
+    transform: translateX(0);
+}
