@@ -986,7 +986,6 @@ img {
   }
 }
 .title::before {
-  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -999,7 +998,6 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 10;
   padding: 118px 60px;
 }
 @media screen and (min-width: 1200px) {
